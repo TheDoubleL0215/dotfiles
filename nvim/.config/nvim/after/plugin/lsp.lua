@@ -1,5 +1,6 @@
 -- LSP configuration
 local lsp_zero = require('lsp-zero')
+local cmp_action = require('lsp-zero').cmp_action()
 
 
 
@@ -52,7 +53,8 @@ cmp.setup({
 	},
 
 	mapping = {
-		['<CR>'] = cmp.mapping.confirm({select = true}),
+    ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
+		['<Tab>'] = cmp.mapping.confirm({select = true}),
 		['<C-e>'] = cmp.mapping.abort(),
 		['<Up>'] = cmp.mapping.select_prev_item({behavior = 'select'}),
 		['<Down>'] = cmp.mapping.select_next_item({behavior = 'select'}),
