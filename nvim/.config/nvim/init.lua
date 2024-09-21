@@ -1,3 +1,2 @@
-require("levai")
-
-
+require("levai.core")
+require("levai.lazy")
