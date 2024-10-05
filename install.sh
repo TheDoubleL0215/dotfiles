@@ -7,6 +7,7 @@ makepkg -si
 
 yay -S ttf-ubuntu-nerd
 yay -S ttf-ubuntu-mono-nerd
+yay -S ttf-jetbrains-mono-nerd
 
 sudo pacman -S xorg-xrandr
 sudo pacman -S maim xclip xdotool
