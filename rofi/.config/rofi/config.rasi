@@ -16,4 +16,4 @@ configuration{
     sidebar-mode: true;
 }
 
-@theme "catppuccin"
+@theme "~/.config/rofi/catppuccin-macchiato.rasi"
