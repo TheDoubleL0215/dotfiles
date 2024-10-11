@@ -10,6 +10,7 @@ return {
 
     -- import mason-lspconfig
     local mason_lspconfig = require("mason-lspconfig")
+
     local mason_tool_installer = require("mason-tool-installer")
 
     -- enable mason and configure icons
@@ -38,6 +39,7 @@ return {
         "pyright",
       },
     })
+
     mason_tool_installer.setup({
       ensure_installed = {
         "prettier", -- prettier formatter

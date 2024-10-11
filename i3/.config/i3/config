@@ -66,7 +66,7 @@ bindsym $mod+Ctrl+Shift+S exec --no-startup-id maim --select | xclip -selection 
 
 # start a terminal
 bindsym $mod+Return exec alacritty
-bindsym Ctrl+$mod+v exec rofi -show rofi-sound -modi "rofi-sound:~/scripts/rofi-sound/rofi-sound-output-chooser" 
+bindsym Ctrl+$mod+v exec rofi -show rofi-sound -modi "rofi-sound:~/.local/bin/rofi-sound-output-chooser" 
 
 
 # kill focused window
@@ -74,7 +74,7 @@ bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym Mod1+F4 exec --no-startup-id rofi -show power-menu -modi "power-menu:~/scripts/rofi-power-menu/rofi-power-menu --choices=shutdown/reboot"
+bindsym Mod1+F4 exec --no-startup-id rofi -show power-menu -modi "power-menu:~/.local/bin/rofi-power-menu --choices=shutdown/reboot"
 #bindsym $mod+d exec --no-startup-id $HOME/.config/rofi/bin/powermenu
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
